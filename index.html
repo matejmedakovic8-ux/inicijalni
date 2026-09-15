@@ -1,11 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SecureGuard - Informacijska sigurnost</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b1220;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #263247;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 500px;
+            padding: 100px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0b1220, #10243a);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #07111f;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #7dd3fc;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #94a3b8;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #111827;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #263247;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .about {
+            background-color: #111827;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #070d18;
+            color: #64748b;
+        }
+
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    Hello World
+
+    <header>
+        <div class="logo">🛡 SecureGuard</div>
+
+        <nav>
+            <a href="#pocetna">Početna</a>
+            <a href="#usluge">Usluge</a>
+            <a href="#onama">O nama</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="pocetna">
+        <div class="hero-content">
+            <h1>Vaša sigurnost.<br><span>Naša odgovornost.</span></h1>
+
+            <p>
+                SecureGuard pruža moderna rješenja informacijske sigurnosti
+                koja pomažu tvrtkama u zaštiti podataka, sustava i korisnika
+                od kibernetičkih prijetnji.
+            </p>
+
+            <a href="#kontakt" class="button">Kontaktirajte nas</a>
+        </div>
+    </section>
+
+
+    <section id="usluge">
+        <div class="section-title">
+            <h2>Naše usluge</h2>
+            <p>Štitimo vaše poslovanje prije nego što se napad dogodi.</p>
+        </div>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>🔍 Sigurnosna analiza</h3>
+                <p>
+                    Analiziramo vašu IT infrastrukturu i identificiramo
+                    potencijalne sigurnosne propuste prije nego što ih
+                    napadači mogu iskoristiti.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🛡 Zaštita od napada</h3>
+                <p>
+                    Implementiramo sigurnosna rješenja koja smanjuju rizik
+                    od malwarea, phishinga, ransomwarea i drugih
+                    kibernetičkih prijetnji.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚨 Nadzor sustava</h3>
+                <p>
+                    Kontinuirano pratimo sigurnosne događaje i pomažemo
+                    organizacijama brzo reagirati na sumnjive aktivnosti.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="onama">
+        <div class="about-content">
+
+            <div class="section-title">
+                <h2>O nama</h2>
+            </div>
+
+            <p>
+                SecureGuard je tvrtka specijalizirana za informacijsku
+                sigurnost i prevenciju kibernetičkih napada.
+            </p>
+
+            <p>
+                Naš cilj je jednostavan — omogućiti organizacijama da
+                sigurno koriste moderne tehnologije bez nepotrebnog
+                izlaganja riziku.
+            </p>
+
+            <p>
+                Kombiniramo stručnost, moderne sigurnosne tehnologije
+                i preventivni pristup kako bismo zaštitili vaše
+                najvrjednije digitalne resurse.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section id="kontakt" class="contact">
+        <div class="section-title">
+            <h2>Kontakt</h2>
+            <p>Želite provjeriti koliko je vaša tvrtka sigurna?</p>
+        </div>
+
+        <p>
+            Javite nam se i dogovorite sigurnosnu procjenu vaše
+            infrastrukture.
+        </p>
+
+        <form
+        action="https://formspree.io/f/mvzlywgq"
+        method="POST"
+        >
+        <label>
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 SecureGuard. Sva prava pridržana.</p>
+    </footer>
+
 </body>
 </html>
