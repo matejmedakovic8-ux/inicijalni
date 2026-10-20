@@ -1,0 +1,3 @@
+Projekt SecureGuard predstavlja web-stranicu tvrtke koja se bavi informacijskom sigurnošću i zaštitom od kibernetičkih prijetnji. Stranica je izrađena pomoću HTML-a za strukturu sadržaja, CSS-a za dizajn i prilagodbu različitim uređajima te PHP-a za uključivanje zajedničkih dijelova stranice. Sadrži početnu stranicu, prikaz usluga, informacije o tvrtki i kontakt obrazac.
+
+Navigacija omogućuje jednostavno kretanje između pojedinih sekcija stranice, dok kontakt obrazac pomoću usluge Formspree omogućuje slanje poruka. Dizajn koristi tamnu pozadinu i plave detalje kako bi stranica imala moderan izgled povezan s temom informacijske sigurnosti.

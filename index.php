@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TSD-4RT | AB | 22.09.2026. -->
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
@@ -178,16 +179,7 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="logo">🛡 SecureGuard</div>
-
-        <nav>
-            <a href="#pocetna">Početna</a>
-            <a href="#usluge">Usluge</a>
-            <a href="#onama">O nama</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
+<?php include "zaglavlje.php"; ?>
     </header>
 
 
@@ -302,8 +294,10 @@
 
 
     <footer>
-        <p>&copy; 2026 SecureGuard. Sva prava pridržana.</p>
+    <?php include "podnozje.php"; ?>
     </footer>
+
+</main>
 
 </body>
 </html>
